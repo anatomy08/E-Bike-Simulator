@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -38,6 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backgrounds
+    uniqueID: 2011709043
+    locked: 0
+  - name: Ground
+    uniqueID: 2809881781
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Track
+    uniqueID: 3218068149
     locked: 0
