@@ -12,7 +12,6 @@ public class Playgame : MonoBehaviour
     [SerializeField] TMP_Text energyText;
     [SerializeField] Button playButton;
     [SerializeField] AndroidNotificationHandler androidNotificationHandler;
-    [SerializeField] iOSNotificationHandler iosNotificationHandler;
     [SerializeField] int maxEnergy;
     [SerializeField] int energyRechargeDuration;
     int energy;
@@ -84,8 +83,6 @@ public class Playgame : MonoBehaviour
             PlayerPrefs.SetString(EnergyReadyKey, energyReady.ToString()); // we save it to playerPrefs
 #if UNITY_ANDROID
             androidNotificationHandler.ScheduleNotification(energyReady);
-#elif UNITY_IOS
-            iosNotificationHandler.ScheduleNotifaction(energyRechargeDuration);
 #endif
         }
 
